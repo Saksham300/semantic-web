@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.navbar{
+    margin: 0 auto;
+    background-color: green;
+    height: 38px;
+    text-align: center;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0 auto;
+    width: 471px;
+
+
+}
+
+.navbar ul li{
+       
+}
+
+.navbar ul li a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+float: left;
+background-color: red;
+padding: 10px 20px;
+}
+
+.navbar ul li a:hover{
+
+background-color: black;
+
+}
