@@ -1,0 +1,82 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/#> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "New ontology"@en; 
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 7 ###
+#  --------------------------- Property 0------------------------- 
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:label "title"@en; 
+      rdfs:domain :Instit;
+      rdfs:range rdfs:Datatype . 
+#  --------------------------- Property 1------------------------- 
+:teaches rdf:type owl:ObjectProperty ;
+         rdfs:label "teaches"@en; 
+         rdfs:domain :Instructor;
+         rdfs:range :Course . 
+#  --------------------------- Property 2------------------------- 
+:gradedby rdf:type owl:ObjectProperty ;
+          rdfs:label "gradedBy"@en; 
+          rdfs:domain :Grade;
+          rdfs:range :Instructor . 
+#  --------------------------- Property 3------------------------- 
+:enrolledIn rdf:type owl:ObjectProperty ;
+            rdfs:label "enrolledIn"@en; 
+            rdfs:domain :Student;
+            rdfs:range :Course . 
+#  --------------------------- Property 4------------------------- 
+:completed rdf:type owl:ObjectProperty ;
+           rdfs:label "completed"@en; 
+           rdfs:domain :Student;
+           rdfs:range :Assignment . 
+#  --------------------------- Property 5------------------------- 
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:label "belongsTo"@en; 
+           rdfs:domain :Student;
+           rdfs:range :Semester . 
+#  --------------------------- Property 6------------------------- 
+:teachesStudentsOf rdf:type owl:ObjectProperty ;
+                   rdfs:label "teachesStudentsOf"@en; 
+                   rdfs:domain :Instructor;
+                   rdfs:range :Semester . 
+###  Class Definitions (Number of Classes) 7 ###
+#  --------------------------- Class  0------------------------- 
+:Instit rdf:type owl:Class; 
+        rdfs:label "Institution"@en . 
+#  --------------------------- Class  1------------------------- 
+:Course rdf:type owl:Class; 
+        rdfs:subClassOf :Instit ;
+        rdfs:label "Course"@en . 
+#  --------------------------- Class  2------------------------- 
+:Instructor rdf:type owl:Class; 
+            rdfs:subClassOf :Instit ;
+            rdfs:label "Instructor"@en . 
+#  --------------------------- Class  3------------------------- 
+:Student rdf:type owl:Class; 
+         rdfs:subClassOf :Instit ;
+         rdfs:label "Student"@en . 
+#  --------------------------- Class  4------------------------- 
+:Assignment rdf:type owl:Class; 
+            rdfs:subClassOf :Instit ;
+            rdfs:label "Assignment"@en . 
+#  --------------------------- Class  5------------------------- 
+:Grade rdf:type owl:Class; 
+       rdfs:subClassOf :Instit ;
+       rdfs:label "Grade"@en . 
+#  --------------------------- Class  6------------------------- 
+:Semester rdf:type owl:Class; 
+          rdfs:subClassOf :Instit ;
+          rdfs:label "Semester"@en . 

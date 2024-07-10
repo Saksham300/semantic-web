@@ -1,0 +1,419 @@
+{
+    "_comment": "Empty ontology for WebVOWL Editor [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+    "header": {
+      "languages": [
+        "en"
+      ],
+      "baseIris": [
+        "http://www.w3.org/2000/01/rdf-schema"
+      ],
+      "iri": "http://visualdataweb.org/newOntology/",
+      "title": {
+        "en": "New ontology"
+      },
+      "description": {
+        "en": "New ontology description"
+      }
+    },
+    "namespace": [],
+    "settings": {
+      "global": {
+        "zoom": "0.54",
+        "translation": [
+          380.05,
+          329.27
+        ],
+        "paused": true
+      },
+      "gravity": {
+        "classDistance": 200,
+        "datatypeDistance": 120
+      },
+      "filter": {
+        "checkBox": [
+          {
+            "id": "datatypeFilterCheckbox",
+            "checked": false
+          },
+          {
+            "id": "objectPropertyFilterCheckbox",
+            "checked": false
+          },
+          {
+            "id": "subclassFilterCheckbox",
+            "checked": false
+          },
+          {
+            "id": "disjointFilterCheckbox",
+            "checked": true
+          },
+          {
+            "id": "setoperatorFilterCheckbox",
+            "checked": false
+          }
+        ],
+        "degreeSliderValue": "0"
+      },
+      "modes": {
+        "checkBox": [
+          {
+            "id": "pickandpinModuleCheckbox",
+            "checked": false
+          },
+          {
+            "id": "nodescalingModuleCheckbox",
+            "checked": true
+          },
+          {
+            "id": "compactnotationModuleCheckbox",
+            "checked": false
+          },
+          {
+            "id": "colorexternalsModuleCheckbox",
+            "checked": true
+          }
+        ],
+        "colorSwitchState": false
+      }
+    },
+    "class": [
+      {
+        "id": "Class1",
+        "type": "owl:Class"
+      },
+      {
+        "id": "Class2",
+        "type": "owl:Class"
+      },
+      {
+        "id": "Class3",
+        "type": "owl:Class"
+      },
+      {
+        "id": "Class4",
+        "type": "owl:Class"
+      },
+      {
+        "id": "Class5",
+        "type": "owl:Class"
+      },
+      {
+        "id": "Class6",
+        "type": "owl:Class"
+      },
+      {
+        "id": "Class7",
+        "type": "owl:Class"
+      },
+      {
+        "id": "NodeId12",
+        "type": "rdfs:Datatype"
+      }
+    ],
+    "classAttribute": [
+      {
+        "id": "Class1",
+        "iri": "http://visualdataweb.org/newOntology/Instit",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Institution",
+        "pos": [
+          608.02,
+          126.7
+        ]
+      },
+      {
+        "id": "Class2",
+        "iri": "http://visualdataweb.org/newOntology/Course",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Course",
+        "pos": [
+          762.65,
+          -523.88
+        ]
+      },
+      {
+        "id": "Class3",
+        "iri": "http://visualdataweb.org/newOntology/Instructor",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Instructor",
+        "pos": [
+          1158.21,
+          107.26
+        ]
+      },
+      {
+        "id": "Class4",
+        "iri": "http://visualdataweb.org/newOntology/Student",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Student",
+        "pos": [
+          263.25,
+          390.81
+        ]
+      },
+      {
+        "id": "Class5",
+        "iri": "http://visualdataweb.org/newOntology/Assignment",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Assignment",
+        "pos": [
+          609.95,
+          523.24
+        ]
+      },
+      {
+        "id": "Class6",
+        "iri": "http://visualdataweb.org/newOntology/Grade",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Grade",
+        "pos": [
+          1011.6,
+          517.06
+        ]
+      },
+      {
+        "id": "Class7",
+        "iri": "http://visualdataweb.org/newOntology/Semester",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Semester",
+        "pos": [
+          277.34,
+          -385.47
+        ]
+      },
+      {
+        "id": "NodeId12",
+        "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+        "label": "GNDEC",
+        "attributes": [
+          "datatype"
+        ],
+        "pos": [
+          243.24,
+          124.9
+        ]
+      }
+    ],
+    "property": [
+      {
+        "id": "objectProperty2",
+        "type": "rdfs:subClassOf"
+      },
+      {
+        "id": "objectProperty3",
+        "type": "rdfs:subClassOf"
+      },
+      {
+        "id": "objectProperty4",
+        "type": "rdfs:subClassOf"
+      },
+      {
+        "id": "objectProperty5",
+        "type": "rdfs:subClassOf"
+      },
+      {
+        "id": "objectProperty6",
+        "type": "rdfs:subClassOf"
+      },
+      {
+        "id": "objectProperty7",
+        "type": "rdfs:subClassOf"
+      },
+      {
+        "id": "datatypeProperty12",
+        "type": "owl:DatatypeProperty"
+      },
+      {
+        "id": "objectProperty15",
+        "type": "owl:ObjectProperty"
+      },
+      {
+        "id": "objectProperty18",
+        "type": "owl:ObjectProperty"
+      },
+      {
+        "id": "objectProperty20",
+        "type": "owl:ObjectProperty"
+      },
+      {
+        "id": "objectProperty21",
+        "type": "owl:ObjectProperty"
+      },
+      {
+        "id": "objectProperty22",
+        "type": "owl:ObjectProperty"
+      },
+      {
+        "id": "objectProperty23",
+        "type": "owl:ObjectProperty"
+      }
+    ],
+    "propertyAttribute": [
+      {
+        "id": "objectProperty2",
+        "iri": "http://visualdataweb.org/newOntology/objectProperty2",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Subclass of",
+        "domain": "Class2",
+        "range": "Class1",
+        "pos": [
+          685.34,
+          -198.59
+        ]
+      },
+      {
+        "id": "objectProperty3",
+        "iri": "http://visualdataweb.org/newOntology/objectProperty3",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Subclass of",
+        "domain": "Class3",
+        "range": "Class1",
+        "pos": [
+          883.12,
+          116.98
+        ]
+      },
+      {
+        "id": "objectProperty4",
+        "iri": "http://visualdataweb.org/newOntology/objectProperty4",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Subclass of",
+        "domain": "Class7",
+        "range": "Class1",
+        "pos": [
+          442.68,
+          -129.39
+        ]
+      },
+      {
+        "id": "objectProperty5",
+        "iri": "http://visualdataweb.org/newOntology/objectProperty5",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Subclass of",
+        "domain": "Class6",
+        "range": "Class1",
+        "pos": [
+          809.81,
+          321.88
+        ]
+      },
+      {
+        "id": "objectProperty6",
+        "iri": "http://visualdataweb.org/newOntology/objectProperty6",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Subclass of",
+        "domain": "Class5",
+        "range": "Class1",
+        "pos": [
+          608.98,
+          324.97
+        ]
+      },
+      {
+        "id": "objectProperty7",
+        "iri": "http://visualdataweb.org/newOntology/objectProperty7",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "Subclass of",
+        "domain": "Class4",
+        "range": "Class1",
+        "pos": [
+          435.64,
+          258.75
+        ]
+      },
+      {
+        "id": "datatypeProperty12",
+        "iri": "http://visualdataweb.org/newOntology/name",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "title",
+        "domain": "Class1",
+        "range": "NodeId12",
+        "pos": [
+          416.38,
+          125.75
+        ]
+      },
+      {
+        "id": "objectProperty15",
+        "iri": "http://visualdataweb.org/newOntology/teaches",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "teaches",
+        "attributes": [
+          "object"
+        ],
+        "domain": "Class3",
+        "range": "Class2",
+        "pos": [
+          960.43,
+          -208.31
+        ]
+      },
+      {
+        "id": "objectProperty18",
+        "iri": "http://visualdataweb.org/newOntology/gradedby",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "gradedBy",
+        "domain": "Class6",
+        "range": "Class3",
+        "pos": [
+          1084.9,
+          312.16
+        ]
+      },
+      {
+        "id": "objectProperty20",
+        "iri": "http://visualdataweb.org/newOntology/enrolledIn",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "enrolledIn",
+        "domain": "Class4",
+        "range": "Class2",
+        "pos": [
+          512.95,
+          -66.53
+        ]
+      },
+      {
+        "id": "objectProperty21",
+        "iri": "http://visualdataweb.org/newOntology/completed",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "completed",
+        "attributes": [
+          "object"
+        ],
+        "domain": "Class4",
+        "range": "Class5",
+        "pos": [
+          436.6,
+          457.02
+        ]
+      },
+      {
+        "id": "objectProperty22",
+        "iri": "http://visualdataweb.org/newOntology/belongsTo",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "belongsTo",
+        "domain": "Class4",
+        "range": "Class7",
+        "pos": [
+          270.29,
+          2.67
+        ]
+      },
+      {
+        "id": "objectProperty23",
+        "iri": "http://visualdataweb.org/newOntology/teachesStudentsOf",
+        "baseIri": "http://visualdataweb.org/newOntology/",
+        "label": "teachesStudentsOf",
+        "attributes": [
+          "object"
+        ],
+        "domain": "Class3",
+        "range": "Class7",
+        "pos": [
+          717.77,
+          -139.1
+        ]
+      }
+    ]
+  }

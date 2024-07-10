@@ -1,0 +1,178 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://xmlns.com/foaf/0.1/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@base 			<http://xmlns.com/foaf/0.1/> .
+
+<http://xmlns.com/foaf/0.1/> rdf:type owl:Ontology ;
+                             dc:title "Friend of a Friend (FOAF) vocabulary"@en; 
+                             dc:description "The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 22 ###
+#  --------------------------- Property 0------------------------- 
+:size_required rdf:type owl:ObjectProperty ;
+               rdfs:label "size required"@en; 
+               rdfs:domain :Shoes;
+               rdfs:range :size . 
+#  --------------------------- Property 1------------------------- 
+:wants rdf:type owl:ObjectProperty ;
+       rdfs:label "wants"@en; 
+       rdfs:domain :customer;
+       rdfs:range :Shoes . 
+#  --------------------------- Property 2------------------------- 
+:brand_name rdf:type owl:ObjectProperty ;
+            rdfs:label "brand name"@en; 
+            rdfs:domain :Shoes;
+            rdfs:range :Nike . 
+#  --------------------------- Property 3------------------------- 
+:brand_name rdf:type owl:ObjectProperty ;
+            rdfs:label "brand name"@en; 
+            rdfs:domain :size;
+            rdfs:range :Nike . 
+#  --------------------------- Property 4------------------------- 
+:shoe_chosen rdf:type owl:ObjectProperty ;
+             rdfs:label "shoe chosen"@en; 
+             rdfs:domain :Nike;
+             rdfs:range :Shoe_Selected . 
+#  --------------------------- Property 5------------------------- 
+:shoe_chosen rdf:type owl:ObjectProperty ;
+             rdfs:label "shoe chosen"@en; 
+             rdfs:domain :size;
+             rdfs:range :Shoe_Selected . 
+#  --------------------------- Property 6------------------------- 
+:price_range_ rdf:type owl:ObjectProperty ;
+              rdfs:label "price range "@en; 
+              rdfs:domain :Shoes;
+              rdfs:range :Nike . 
+#  --------------------------- Property 7------------------------- 
+:color rdf:type owl:ObjectProperty ;
+       rdfs:label "color"@en; 
+       rdfs:domain :Shoes;
+       rdfs:range :Red . 
+#  --------------------------- Property 8------------------------- 
+:brand_name rdf:type owl:ObjectProperty ;
+            rdfs:label "brand name"@en; 
+            rdfs:domain :Red;
+            rdfs:range :Nike . 
+#  --------------------------- Property 9------------------------- 
+:color rdf:type owl:ObjectProperty ;
+       rdfs:label "color"@en; 
+       rdfs:domain :Nike;
+       rdfs:range :Red . 
+#  --------------------------- Property 10------------------------- 
+:shoe_chosen rdf:type owl:ObjectProperty ;
+             rdfs:label "shoe chosen"@en; 
+             rdfs:domain :Shoes;
+             rdfs:range :Shoe_Selected . 
+#  --------------------------- Property 11------------------------- 
+:shoe_chosen rdf:type owl:ObjectProperty ;
+             rdfs:label "shoe chosen"@en; 
+             rdfs:domain :Red;
+             rdfs:range :Shoe_Selected . 
+#  --------------------------- Property 12------------------------- 
+:Add_to_Cart rdf:type owl:ObjectProperty ;
+             rdfs:label "Add to Cart"@en; 
+             rdfs:domain :Shoe_Selected;
+             rdfs:range :Shopping_Cart . 
+#  --------------------------- Property 13------------------------- 
+:Clicked_on rdf:type owl:ObjectProperty ;
+            rdfs:label "Clicked on"@en; 
+            rdfs:domain :Shopping_Cart;
+            rdfs:range :Buy_Now . 
+#  --------------------------- Property 14------------------------- 
+:Payment_Method rdf:type owl:ObjectProperty ;
+                rdfs:label "Payment Method"@en; 
+                rdfs:domain :Buy_Now;
+                rdfs:range :Debit_Card . 
+#  --------------------------- Property 15------------------------- 
+:Payment_Method rdf:type owl:ObjectProperty ;
+                rdfs:label "Payment Method"@en; 
+                rdfs:domain :Buy_Now;
+                rdfs:range :Class76 . 
+#  --------------------------- Property 16------------------------- 
+:Payment_Method rdf:type owl:ObjectProperty ;
+                rdfs:label "Payment Method"@en; 
+                rdfs:domain :Buy_Now;
+                rdfs:range :Cash_on_Delivery . 
+#  --------------------------- Property 17------------------------- 
+:Payment_Method rdf:type owl:ObjectProperty ;
+                rdfs:label "Payment Method"@en; 
+                rdfs:domain :Buy_Now;
+                rdfs:range :Net_Banking . 
+#  --------------------------- Property 18------------------------- 
+:Checkout rdf:type owl:ObjectProperty ;
+          rdfs:label "Checkout"@en; 
+          rdfs:domain :Debit_Card;
+          rdfs:range :Order_Placed . 
+#  --------------------------- Property 19------------------------- 
+:Checkout rdf:type owl:ObjectProperty ;
+          rdfs:label "Checkout"@en; 
+          rdfs:domain :Class76;
+          rdfs:range :Order_Placed . 
+#  --------------------------- Property 20------------------------- 
+:Checkout rdf:type owl:ObjectProperty ;
+          rdfs:label "Checkout"@en; 
+          rdfs:domain :Cash_on_Delivery;
+          rdfs:range :Order_Placed . 
+#  --------------------------- Property 21------------------------- 
+:Checkout rdf:type owl:ObjectProperty ;
+          rdfs:label "Checkout"@en; 
+          rdfs:domain :Net_Banking;
+          rdfs:range :Order_Placed . 
+###  Class Definitions (Number of Classes) 15 ###
+#  --------------------------- Class  0------------------------- 
+:Shoes rdf:type owl:Class; 
+       rdfs:label "Shoes"@en . 
+#  --------------------------- Class  1------------------------- 
+:size rdf:type owl:Class; 
+      rdfs:label "size"@en . 
+#  --------------------------- Class  2------------------------- 
+:customer rdf:type owl:Class; 
+          rdfs:label "customer"@en . 
+#  --------------------------- Class  3------------------------- 
+:Nike rdf:type owl:Class; 
+      rdfs:label "Nike"@en . 
+#  --------------------------- Class  4------------------------- 
+:Shoe_Selected rdf:type owl:Class; 
+               rdfs:label "Shoe Selected"@en . 
+#  --------------------------- Class  5------------------------- 
+:Red rdf:type owl:Class; 
+     rdfs:label "Red"@en . 
+#  --------------------------- Class  6------------------------- 
+:Debit_Card rdf:type owl:Class; 
+            rdfs:label "Debit Card"@en . 
+#  --------------------------- Class  7------------------------- 
+:UPI rdf:type owl:Class; 
+     rdfs:label "UPI"@en . 
+#  --------------------------- Class  8------------------------- 
+:Class76 rdf:type owl:Class; 
+         rdfs:label "UPI"@en . 
+#  --------------------------- Class  9------------------------- 
+:But_Now rdf:type owl:Class; 
+         rdfs:label "Buy Now"@en . 
+#  --------------------------- Class  10------------------------- 
+:Shopping_Cart rdf:type owl:Class; 
+               rdfs:label "Shopping Cart"@en . 
+#  --------------------------- Class  11------------------------- 
+:Buy_Now rdf:type owl:Class; 
+         rdfs:label "Buy Now"@en . 
+#  --------------------------- Class  12------------------------- 
+:Cash_on_Delivery rdf:type owl:Class; 
+                  rdfs:label "Cash on Delivery"@en . 
+#  --------------------------- Class  13------------------------- 
+:Net_Banking rdf:type owl:Class; 
+             rdfs:label "Net Banking"@en . 
+#  --------------------------- Class  14------------------------- 
+:Order_Placed rdf:type owl:Class; 
+              rdfs:label "Order Placed"@en . 
