@@ -1,0 +1,38 @@
+@prefix : <http://example.org/bahubali#> .
+@prefix a: <http://example.org/ontology/actors#> .
+@prefix mo: <http://example.org/ontology/movies#> .
+
+:Bahubali_Movie_Collection  a  :MovieCollection ;
+                             :name "Bahubali Movie Collection" ;
+                             :hasMovie :Bahubali_The_Beginning,
+                                       :Bahubali_The_Conclusion ;
+                             :hasCast :Prabhas,
+                                      :Rana_Daggubati,
+                                      :Anushka_Shetty,
+                                      :Tamannaah_Bhatia,
+                                      :Ramya_Krishnan,
+                                      :Sathyaraj,
+                                      :Nassar .
+
+:Prabhas  a  a:Actor ;
+          a:plays :Amarendra_Baahubali .
+
+:Rana_Daggubati  a  a:Actor ;
+                 a:plays :Bhallaladeva .
+
+:Anushka_Shetty  a  a:Actor ;
+                 a:plays :Devasena .
+
+:Tamannaah_Bhatia  a  a:Actor ;
+                   a:plays :Avanthika .
+
+:Ramya_Krishnan  a  a:Actor ;
+                 a:plays :Sivagami .
+
+:Sathyaraj  a  a:Actor ;
+            a:plays :Kattappa .
+
+:Nassar  a  a:Actor ;
+         a:plays :Bijjaladeva .
+
+
