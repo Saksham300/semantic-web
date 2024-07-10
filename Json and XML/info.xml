@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+<student1>
+ <name>Rahuk</name>
+ <Study>11</Study>
+
+</student1> 
+
+<student2>
+ <name>Vijay</name>
+ <Study>12</Study>
+
+</student2> 
+</result>

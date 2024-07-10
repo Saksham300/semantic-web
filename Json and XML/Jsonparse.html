@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Converting JSON string into Javascript Object using JSON.parse method</h2>
+    <div id="myid">
+
+    </div>
+    <script>
+    var obj=`{
+        "name":"Saksham",
+        "mobile":"2215159",
+        "city":"Ludhiana",
+        "courses":["MATHS","GAMING","CODING"] 
+        }`;
+    var data=JSON.parse(obj);
+    var name=data.name;
+    var mobile=data.mobile;
+    var city=data.city;
+    var course1=data.courses[0];
+    var course2=data.courses[1];
+    var course3=data.courses[2];
+    document.getElementById("myid").innerHTML="Name: "+name+"<br>Mobile:"+mobile+"<br>City:"+city+"<br>Courses:"+course1+","+course2+","+course3;
+   
+    </script>
+</body>
+</html>

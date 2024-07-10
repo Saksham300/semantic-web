@@ -1,0 +1,13 @@
+{
+    "name":"Saksham",
+    "marks":85,
+    "date":"2024-05-28",
+    "courses":["MATHS","GAMING","CODING"],
+    "address":{
+        "city":"LUDHIANA",
+        "area":"Kitchlu Nagar",
+        "pin":14401,
+        "lon":80.2323,
+        "lat":45.5454
+    }
+}
