@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b2838; /* Steam-like background */
+            margin: 0;
+            padding: 0;
+            color: #D1D1D1; /* Lighter text for better contrast */
+        }
+
+        header {
+            background-color: #171a21; /* Dark background for header */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #c8e6c9; /* Steam green color for header */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #282c34; /* Darker navbar */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #c8e6c9; /* Steam-like green text */
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #a2d9a9; /* Lighter green for hover */
+        }
+
+        .store-section {
+            padding: 30px;
+            text-align: center;
+            background-color: #1b2838;
+        }
+
+        .store-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #c8e6c9; /* Steam green color */
+        }
+
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: #2a2f38; /* Slightly lighter dark background for cards */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #D1D1D1; /* Lighter text for readability */
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 180px; /* Adjust the height as necessary */
+            object-fit: cover; /* Ensure images fit the card without distortion */
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .game-card h3 {
+            font-size: 1.5rem;
+            color: #c8e6c9; /* Steam green for game title */
+            margin-bottom: 10px;
+        }
+
+        .game-card p {
+            font-size: 1rem;
+            color: #B0B0B0; /* Slightly lighter text for description */
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: #00b894; /* Light green for price */
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #171a21; /* Same as header */
+            color: #c8e6c9;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Game Explorer Store</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="store-section">
+    <h2>Buy It and Enjoy It!!!</h2>
+    
+    <!-- Game Cards -->
+    <div class="game-list">
+        <div class="game-card">
+            <img src="images/th.jpg" alt="GTA V">
+            <h3>GTA V</h3>
+            <p><strong>Developer:</strong> Rockstar Games</p>
+            <p><strong>Release Year:</strong> 2013</p>
+            <p class="price">₹2500</p>
+        </div>
+        <div class="game-card">
+            <img src="images/2.jpg" alt="Red Dead Redemption 2">
+            <h3>Red Dead Redemption 2</h3>
+            <p><strong>Developer:</strong> Rockstar Games</p>
+            <p><strong>Release Year:</strong> 2018</p>
+            <p class="price">₹3500</p>
+        </div>
+        <div class="game-card">
+            <img src="images/3.jpg" alt="Assassin's Creed Valhalla">
+            <h3>Assassin's Creed Valhalla</h3>
+            <p><strong>Developer:</strong> Ubisoft</p>
+            <p><strong>Release Year:</strong> 2020</p>
+            <p class="price">₹4000</p>
+        </div>
+        <div class="game-card">
+            <img src="images/4.jpg"" alt="Cyberpunk 2077">
+            <h3>Cyberpunk 2077</h3>
+            <p><strong>Developer:</strong> CD Projekt Red</p>
+            <p><strong>Release Year:</strong> 2020</p>
+            <p class="price">₹3500</p>
+        </div>
+        <div class="game-card">
+            <img src="images/5.jpg"" alt="The Witcher 3">
+            <h3>The Witcher 3</h3>
+            <p><strong>Developer:</strong> CD Projekt Red</p>
+            <p><strong>Release Year:</strong> 2015</p>
+            <p class="price">₹2800</p>
+        </div>
+        <div class="game-card">
+            <img src="images/6.jpg"" alt="Call of Duty: Warzone">
+            <h3>Call of Duty: Warzone</h3>
+            <p><strong>Developer:</strong> Activision</p>
+            <p><strong>Release Year:</strong> 2020</p>
+            <p class="price">₹2000</p>
+        </div>
+        <div class="game-card">
+            <img src="images/7.jpg"" alt="Counter-Strike: Global Offensive">
+            <h3>Counter-Strike: Global Offensive</h3>
+            <p><strong>Developer:</strong> Valve</p>
+            <p><strong>Release Year:</strong> 2012</p>
+            <p class="price">₹1200</p>
+        </div>
+        <div class="game-card">
+            <img src="images/8.jpg"" alt="Spider-Man">
+            <h3>Spider-Man</h3>
+            <p><strong>Developer:</strong> Insomniac Games</p>
+            <p><strong>Release Year:</strong> 2018</p>
+            <p class="price">₹2500</p>
+        </div>
+        <div class="game-card">
+            <img src="images/9.jpg"" alt="Elden Ring">
+            <h3>Elden Ring</h3>
+            <p><strong>Developer:</strong> FromSoftware</p>
+            <p><strong>Release Year:</strong> 2022</p>
+            <p class="price">₹4000</p>
+        </div>
+        <div class="game-card">
+            <img src="images/10.jpg"" alt="Far Cry 5">
+            <h3>Far Cry 6</h3>
+            <p><strong>Developer:</strong> Ubisoft</p>
+            <p><strong>Release Year:</strong> 2018</p>
+            <p class="price">₹3000</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Game Explorer | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

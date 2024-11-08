@@ -1,0 +1,75 @@
+{
+    "games": [
+      {
+        "id": "GTA_V",
+        "name": "Grand Theft Auto V",
+        "type": "Action",
+        "description": "An open-world action-adventure game set in the fictional city of Los Santos.",
+        "image": "images/th.jpg"
+      },
+      {
+        "id": "CSGO",
+        "name": "Counter-Strike: Global Offensive",
+        "type": "FPS",
+        "description": "A tactical FPS game where two teams, Terrorists and Counter-Terrorists, face off.",
+        "image": "images/csgo.jpg"
+      },
+      {
+        "id": "Witcher3",
+        "name": "The Witcher 3: Wild Hunt",
+        "type": "RPG",
+        "description": "An RPG adventure game following Geralt, a monster hunter, through a fantasy world.",
+        "image": "images/witcher3.jpg"
+      },
+      {
+        "id": "PUBG",
+        "name": "PlayerUnknown's Battlegrounds",
+        "type": "FPS",
+        "description": "A battle royale game where players fight to be the last one standing.",
+        "image": "images/pubg.jpg"
+      },
+      {
+        "id": "Zelda",
+        "name": "The Legend of Zelda: Breath of the Wild",
+        "type": "Adventure",
+        "description": "An action-adventure game set in the vast world of Hyrule.",
+        "image": "images/zelda.jpg"
+      },
+      {
+        "id": "Overwatch",
+        "name": "Overwatch",
+        "type": "FPS",
+        "description": "A team-based multiplayer FPS game with unique heroes.",
+        "image": "images/overwatch.jpg"
+      },
+      {
+        "id": "Skyrim",
+        "name": "The Elder Scrolls V: Skyrim",
+        "type": "RPG",
+        "description": "An open-world RPG set in the fictional province of Skyrim.",
+        "image": "images/skyrim.jpg"
+      },
+      {
+        "id": "Fortnite",
+        "name": "Fortnite",
+        "type": "Action",
+        "description": "A battle royale game where players build and fight to be the last one standing.",
+        "image": "images/fortnite.jpg"
+      },
+      {
+        "id": "AssassinsCreed",
+        "name": "Assassin's Creed Valhalla",
+        "type": "Action",
+        "description": "An action RPG that follows a Viking warrior's journey.",
+        "image": "images/assassinscreed.jpg"
+      },
+      {
+        "id": "DarkSouls",
+        "name": "Dark Souls III",
+        "type": "RPG",
+        "description": "A challenging RPG set in a dark, fantasy world.",
+        "image": "images/darksouls.jpg"
+      }
+    ]
+  }
+  

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Game Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="store-section">
+        <h2>What Type of Game Are You Looking For?</h2>
+
+        <!-- Dropdown Menu for Game Types -->
+        <div class="dropdown">
+            <button class="dropbtn">Select Type</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="fetchGames('Action')">Action</a>
+                <a href="#" onclick="fetchGames('FPS')">FPS</a>
+                <a href="#" onclick="fetchGames('RPG')">RPG</a>
+                <a href="#" onclick="fetchGames('Adventure')">Adventure</a>
+            </div>
+        </div>
+
+        <!-- Container for Game Cards -->
+        <div id="games-container" class="game-list">
+            <!-- Game cards will appear here -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1b2838; /* Steam-like background */
+    color: #D1D1D1; /* Lighter text for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #171a21; /* Dark background for header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #D1D1D1;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #c8e6c9; /* Steam green color for header */
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #282c34; /* Darker navbar */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative; /* Position for dropdown */
+}
+
+nav ul li a {
+    color: #c8e6c9; /* Steam-like green text */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #a2d9a9; /* Lighter green for hover */
+}
+
+/* Horizontal Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 10px 20px;
+    background-color: #66c0f4; /* Steam-like blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282c34; /* Darker navbar */
+    border-radius: 5px;
+    top: 100%; /* Position below the button */
+    left: 0;
+    transform: translateX(-30%);
+    text-align: left;
+    min-width: 200px;
+    z-index: 1;
+    white-space: nowrap;
+    flex-direction: row; /* Ensure horizontal layout */
+}
+
+.dropdown-content a {
+    padding: 12px 20px;
+    display: block;
+    color: #D1D1D1; /* Lighter text for readability */
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #1b2838;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex; /* Open dropdown horizontally */
+}
+
+/* Main Section */
+.store-section {
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #1b2838; /* Steam-like background */
+}
+
+.store-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #c8e6c9; /* Steam green color */
+}
+
+/* Game Cards Layout */
+.game-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 50px; /* Adding space above for dropdown */
+}
+
+/* Game Card Styles */
+.game-card {
+    flex-shrink: 0;
+    width: 300px;
+    background-color: #2a2f38; /* Slightly lighter dark background for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #D1D1D1; /* Lighter text for readability */
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.game-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.game-card h3 {
+    font-size: 1.5rem;
+    color: #c8e6c9; /* Steam green for game title */
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    font-size: 1rem;
+    color: #B0B0B0; /* Slightly lighter text for description */
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #00b894; /* Light green for price */
+    margin-top: 10px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #4a8bb5;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: #171a21; /* Same as header */
+    color: #c8e6c9;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}

@@ -1,0 +1,90 @@
+@prefix ex: <http://example.org/games#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Game Types
+ex:Action a rdfs:Class .
+ex:FPS a rdfs:Class .
+ex:RPG a rdfs:Class .
+ex:Adventure a rdfs:Class .
+
+# Properties
+ex:description a rdf:Property ;
+    rdfs:label "Description" ;
+    rdfs:comment "A brief description of the game." .
+
+ex:image a rdf:Property ;
+    rdfs:label "Image" ;
+    rdfs:comment "An image associated with the game." .
+
+# Games
+
+ex:GTA_V a ex:Action ;
+    rdfs:label "Grand Theft Auto V" ;
+    ex:developer "Rockstar Games" ;
+    ex:releaseYear "2013" ;
+    ex:description "An open-world action-adventure game set in the fictional city of Los Santos." ;
+    ex:image "images/th.jpg" .
+
+ex:CSGO a ex:FPS ;
+    rdfs:label "Counter-Strike: Global Offensive" ;
+    ex:developer "Valve" ;
+    ex:releaseYear "2012" ;
+    ex:description "A tactical FPS game where two teams, Terrorists and Counter-Terrorists, face off." ;
+    ex:image "images/7.jpg" .
+
+ex:Witcher3 a ex:RPG ;
+    rdfs:label "The Witcher 3: Wild Hunt" ;
+    ex:developer "CD Projekt" ;
+    ex:releaseYear "2015" ;
+    ex:description "An RPG adventure game following Geralt, a monster hunter, through a fantasy world." ;
+    ex:image "images/5.jpg" .
+
+ex:PUBG a ex:FPS ;
+    rdfs:label "PlayerUnknown's Battlegrounds" ;
+    ex:developer "PUBG Corporation" ;
+    ex:releaseYear "2017" ;
+    ex:description "A battle royale game where players fight to be the last one standing." ;
+    ex:image "images/15.jpg" .
+
+ex:Zelda a ex:Adventure ;
+    rdfs:label "The Legend of Zelda: Breath of the Wild" ;
+    ex:developer "Nintendo" ;
+    ex:releaseYear "2017" ;
+    ex:description "An action-adventure game set in the vast world of Hyrule." ;
+    ex:image "images/17.jpg" .
+
+ex:Overwatch a ex:FPS ;
+    rdfs:label "Overwatch" ;
+    ex:developer "Blizzard Entertainment" ;
+    ex:releaseYear "2016" ;
+    ex:description "A team-based multiplayer FPS game with unique heroes." ;
+    ex:image "images/14.jpg" .
+
+ex:Skyrim a ex:RPG ;
+    rdfs:label "The Elder Scrolls V: Skyrim" ;
+    ex:developer "Bethesda Game Studios" ;
+    ex:releaseYear "2011" ;
+    ex:description "An open-world RPG set in the fictional province of Skyrim." ;
+    ex:image "images/16.jpg" .
+
+ex:Fortnite a ex:Action ;
+    rdfs:label "Fortnite" ;
+    ex:developer "Epic Games" ;
+    ex:releaseYear "2017" ;
+    ex:description "A battle royale game where players build and fight to be the last one standing." ;
+    ex:image "images/12.jpg" .
+
+ex:AssassinsCreed a ex:Action ;
+    rdfs:label "Assassin's Creed Valhalla" ;
+    ex:developer "Ubisoft" ;
+    ex:releaseYear "2020" ;
+    ex:description "An action RPG that follows a Viking warrior's journey." ;
+    ex:image "images/3.jpg" .
+
+ex:DarkSouls a ex:RPG ;
+    rdfs:label "Dark Souls III" ;
+    ex:developer "FromSoftware" ;
+    ex:releaseYear "2016" ;
+    ex:description "A challenging RPG set in a dark, fantasy world." ;
+    ex:image "images/13.jpg" .
