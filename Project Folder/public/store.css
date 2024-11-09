@@ -1,0 +1,223 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1b2838 25%, #171a21 75%);
+    background-size: 400% 400%;
+    animation: glowBackground 10s ease-in-out infinite;
+    margin: 0;
+    padding: 0;
+    color: #D1D1D1; /* Lighter text for better contrast */
+}
+
+@keyframes glowBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background-color: #171a21; /* Dark background for header */
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #c8e6c9; /* Steam green color for header */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Space between logo/title and nav */
+}
+
+.logo {
+    width: 60px; /* Adjust size of the logo */
+    height: 60px; /* Adjust size of the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    margin-right: 15px; /* Space between logo and title */
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #282c34; /* Darker navbar */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #c8e6c9; /* Steam-like green text */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #a2d9a9; /* Lighter green for hover */
+}
+
+.store-section {
+    padding: 30px;
+    text-align: center;
+    background-color: #1b2838;
+}
+
+.store-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #c8e6c9; /* Steam green color */
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #2a2f38; /* Slightly lighter dark background for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #D1D1D1; /* Lighter text for readability */
+    position: relative;
+}
+
+.button-container {
+    display: none; /* Hide buttons initially */
+    margin-top: 10px;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.game-card img {
+    width: 100%;
+    height: 180px; /* Adjust the height as necessary */
+    object-fit: cover; /* Ensure images fit the card without distortion */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    font-size: 1.5rem;
+    color: #c8e6c9; /* Steam green for game title */
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    font-size: 1rem;
+    color: #B0B0B0; /* Slightly lighter text for description */
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #00b894; /* Light green for price */
+    margin-top: 10px;
+}
+
+.game-card button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.preview-btn {
+    background-color: #3b5998; /* Blue for preview */
+    cursor: pointer;
+}
+
+.purchase-btn {
+    background-color: #00b894; /* Green for purchase */
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.preview-btn:hover {
+    background-color: #355088;
+}
+
+.purchase-btn:hover {
+    background-color: #009f74;
+}
+
+footer {
+    background-color: #171a21; /* Same as header */
+    color: #c8e6c9;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #171a21;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.modal-content video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.close {
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Show button container when game card is clicked */
+.game-card.active .button-container {
+    display: block;
+}

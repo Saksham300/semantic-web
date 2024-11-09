@@ -1,223 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #1b2838; /* Steam-like background */
-            margin: 0;
-            padding: 0;
-            color: #D1D1D1; /* Lighter text for better contrast */
-        }
-
-        header {
-            background-color: #171a21; /* Dark background for header */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: #c8e6c9; /* Steam green color for header */
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #282c34; /* Darker navbar */
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #c8e6c9; /* Steam-like green text */
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-            color: #a2d9a9; /* Lighter green for hover */
-        }
-
-        .store-section {
-            padding: 30px;
-            text-align: center;
-            background-color: #1b2838;
-        }
-
-        .store-section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #c8e6c9; /* Steam green color */
-        }
-
-        .game-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .game-card {
-            background-color: #2a2f38; /* Slightly lighter dark background for cards */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-            width: 250px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            color: #D1D1D1; /* Lighter text for readability */
-        }
-
-        .game-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
-        }
-
-        .game-card img {
-            width: 100%;
-            height: 180px; /* Adjust the height as necessary */
-            object-fit: cover; /* Ensure images fit the card without distortion */
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .game-card h3 {
-            font-size: 1.5rem;
-            color: #c8e6c9; /* Steam green for game title */
-            margin-bottom: 10px;
-        }
-
-        .game-card p {
-            font-size: 1rem;
-            color: #B0B0B0; /* Slightly lighter text for description */
-        }
-
-        .price {
-            font-size: 1.2rem;
-            color: #00b894; /* Light green for price */
-            margin-top: 10px;
-        }
-
-        footer {
-            background-color: #171a21; /* Same as header */
-            color: #c8e6c9;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-        }
-    </style>
+    <link rel="stylesheet" href="store.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Game Explorer Store</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <div class="logo-container">
+            <img src="images/images.png" alt="Game Explorer Logo" class="logo">
+            <h1>Game Explorer Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main class="store-section">
-    <h2>Buy It and Enjoy It!!!</h2>
-    
-    <!-- Game Cards -->
-    <div class="game-list">
-        <div class="game-card">
-            <img src="images/th.jpg" alt="GTA V">
-            <h3>GTA V</h3>
-            <p><strong>Developer:</strong> Rockstar Games</p>
-            <p><strong>Release Year:</strong> 2013</p>
-            <p class="price">₹2500</p>
+    <main class="store-section">
+        <h2>Buy It and Enjoy It!!!</h2>
+
+        <!-- Game Cards -->
+        <div class="game-list">
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/th.jpg" alt="GTA V">
+                <h3>GTA V</h3>
+                <p><strong>Developer:</strong> Rockstar Games</p>
+                <p><strong>Release Year:</strong> 2013</p>
+                <p><strong>Description:</strong> An action-packed open-world adventure set in San Andreas.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <span>(5.0)</span>
+                </div>
+                <p class="price">₹2500</p>
+
+                <!-- Button container that will be toggled -->
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/1.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/')">Purchase</button>
+                </div>
+            </div>
+
+
+            <!-- Game Card 1 -->
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/2.jpg" alt="Red Dead Redemption 2">
+                <h3>Red Dead Redemption 2</h3>
+                <p><strong>Developer:</strong> Rockstar Games</p>
+                <p><strong>Release Year:</strong> 2018</p>
+                <p><strong>Description:</strong> A journey through the rugged Wild West with immersive storytelling.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <span>(4.8)</span>
+                </div>
+                <p class="price">₹3500</p>
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/2.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/')">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Game Card 2 -->
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/3.jpg" alt="Assassin's Creed Valhalla">
+                <h3>Assassin's Creed Valhalla</h3>
+                <p><strong>Developer:</strong> Ubisoft</p>
+                <p><strong>Release Year:</strong> 2020</p>
+                <p><strong>Description:</strong> Experience Viking life and Norse mythology in a sprawling open world.
+                </p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐☆</span>
+                    <span>(4.3)</span>
+                </div>
+                <p class="price">₹4000</p>
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/3.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/2208920/Assassins_Creed_Valhalla/')">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Repeat for each game card below -->
+
+            <!-- Game Card 3 -->
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/4.jpg" alt="Cyberpunk 2077">
+                <h3>Cyberpunk 2077</h3>
+                <p><strong>Developer:</strong> CD Projekt Red</p>
+                <p><strong>Release Year:</strong> 2020</p>
+                <p><strong>Description:</strong> Enter a futuristic world with a unique narrative in Night City.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐☆</span>
+                    <span>(4.2)</span>
+                </div>
+                <p class="price">₹3500</p>
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/4.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/1091500/Cyberpunk_2077/')">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Game Card 4 -->
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/5.jpg" alt="The Witcher 3">
+                <h3>The Witcher 3</h3>
+                <p><strong>Developer:</strong> CD Projekt Red</p>
+                <p><strong>Release Year:</strong> 2015</p>
+                <p><strong>Description:</strong> A fantasy RPG with deep storytelling and captivating quests.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <span>(4.9)</span>
+                </div>
+                <p class="price">₹2800</p>
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/5.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/')">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Game Card 5 -->
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/6.jpg" alt="Call of Duty: Warzone">
+                <h3>Call of Duty: Warzone</h3>
+                <p><strong>Developer:</strong> Activision</p>
+                <p><strong>Release Year:</strong> 2020</p>
+                <p><strong>Description:</strong> A fast-paced, multiplayer battle royale experience.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐☆</span>
+                    <span>(4.0)</span>
+                </div>
+                <p class="price">₹2000</p>
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/6.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/1237970/Call_of_Duty_Warzone/')">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Game Card 6 -->
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/7.jpg" alt="Counter-Strike: Global Offensive">
+                <h3>Counter-Strike: Global Offensive</h3>
+                <p><strong>Developer:</strong> Valve</p>
+                <p><strong>Release Year:</strong> 2012</p>
+                <p><strong>Description:</strong> A competitive first-person shooter with tactical team-based gameplay.
+                </p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐☆</span>
+                    <span>(4.4)</span>
+                </div>
+                <p class="price">₹1200</p>
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/7.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/')">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Game Card 7 -->
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/8.jpg" alt="Spider-Man">
+                <h3>Spider-Man</h3>
+                <p><strong>Developer:</strong> Insomniac Games</p>
+                <p><strong>Release Year:</strong> 2018</p>
+                <p><strong>Description:</strong> Swing through New York City as the iconic superhero in this
+                    action-packed game.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <span>(4.7)</span>
+                </div>
+                <p class="price">₹2500</p>
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/8.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/1817070/SpiderMan_Miles_Morales/')">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Game Card 8 -->
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/9.jpg" alt="Overwatch 2">
+                <h3>Elden Ring</h3>
+                <p><strong>Developer:</strong> FromSoftware</p>
+                <p><strong>Release Year:</strong> 2022</p>
+                <p><strong>Description:</strong> A team-based multiplayer shooter with unique heroes and abilities.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐☆</span>
+                    <span>(4.3)</span>
+                </div>
+                <p class="price">₹3000</p>
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/9.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/1829330/Overwatch_2/')">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Game Card 9 -->
+            <div class="game-card" onclick="toggleGameCard(this)">
+                <img src="images/10.jpg" alt="Minecraft">
+                <h3>Far Cry 6</h3>
+                <p><strong>Developer:</strong> Ubisoft</p>
+                <p><strong>Release Year:</strong> 2021</p>
+                <p><strong>Description:</strong> Fight to liberate a tropical paradise from a brutal dictator.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐☆</span>
+                    <span>(4.1)</span>
+                </div>
+                <p class="price">₹3000</p>
+                <div class="button-container">
+                    <button class="preview-btn" onclick="openModal('videos/10.mp4')">Preview</button>
+                    <button class="purchase-btn"
+                        onclick="purchaseGame('https://store.steampowered.com/app/1863750/Far_Cry_6/')">Purchase</button>
+                </div>
+            </div>
+
         </div>
-        <div class="game-card">
-            <img src="images/2.jpg" alt="Red Dead Redemption 2">
-            <h3>Red Dead Redemption 2</h3>
-            <p><strong>Developer:</strong> Rockstar Games</p>
-            <p><strong>Release Year:</strong> 2018</p>
-            <p class="price">₹3500</p>
-        </div>
-        <div class="game-card">
-            <img src="images/3.jpg" alt="Assassin's Creed Valhalla">
-            <h3>Assassin's Creed Valhalla</h3>
-            <p><strong>Developer:</strong> Ubisoft</p>
-            <p><strong>Release Year:</strong> 2020</p>
-            <p class="price">₹4000</p>
-        </div>
-        <div class="game-card">
-            <img src="images/4.jpg"" alt="Cyberpunk 2077">
-            <h3>Cyberpunk 2077</h3>
-            <p><strong>Developer:</strong> CD Projekt Red</p>
-            <p><strong>Release Year:</strong> 2020</p>
-            <p class="price">₹3500</p>
-        </div>
-        <div class="game-card">
-            <img src="images/5.jpg"" alt="The Witcher 3">
-            <h3>The Witcher 3</h3>
-            <p><strong>Developer:</strong> CD Projekt Red</p>
-            <p><strong>Release Year:</strong> 2015</p>
-            <p class="price">₹2800</p>
-        </div>
-        <div class="game-card">
-            <img src="images/6.jpg"" alt="Call of Duty: Warzone">
-            <h3>Call of Duty: Warzone</h3>
-            <p><strong>Developer:</strong> Activision</p>
-            <p><strong>Release Year:</strong> 2020</p>
-            <p class="price">₹2000</p>
-        </div>
-        <div class="game-card">
-            <img src="images/7.jpg"" alt="Counter-Strike: Global Offensive">
-            <h3>Counter-Strike: Global Offensive</h3>
-            <p><strong>Developer:</strong> Valve</p>
-            <p><strong>Release Year:</strong> 2012</p>
-            <p class="price">₹1200</p>
-        </div>
-        <div class="game-card">
-            <img src="images/8.jpg"" alt="Spider-Man">
-            <h3>Spider-Man</h3>
-            <p><strong>Developer:</strong> Insomniac Games</p>
-            <p><strong>Release Year:</strong> 2018</p>
-            <p class="price">₹2500</p>
-        </div>
-        <div class="game-card">
-            <img src="images/9.jpg"" alt="Elden Ring">
-            <h3>Elden Ring</h3>
-            <p><strong>Developer:</strong> FromSoftware</p>
-            <p><strong>Release Year:</strong> 2022</p>
-            <p class="price">₹4000</p>
-        </div>
-        <div class="game-card">
-            <img src="images/10.jpg"" alt="Far Cry 5">
-            <h3>Far Cry 6</h3>
-            <p><strong>Developer:</strong> Ubisoft</p>
-            <p><strong>Release Year:</strong> 2018</p>
-            <p class="price">₹3000</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Game Explorer | All Rights Reserved</p>
+    </footer>
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <video id="gameVideo" controls></video>
         </div>
     </div>
-</main>
 
-<footer>
-    <p>&copy; 2024 Game Explorer | All Rights Reserved</p>
-</footer>
+    <script>
+        function toggleGameCard(card) {
+            // Toggle the visibility of the buttons for the clicked card
+            const previewBtn = card.querySelector('.preview-btn');
+            const purchaseBtn = card.querySelector('.purchase-btn');
+
+            // Toggle display property for buttons
+            if (previewBtn.style.display === "none") {
+                previewBtn.style.display = "inline-block";
+                purchaseBtn.style.display = "inline-block";
+            } else {
+                previewBtn.style.display = "none";
+                purchaseBtn.style.display = "none";
+            }
+        }
+        // Function to toggle the game card buttons
+        function toggleGameCard(card) {
+            // Toggle the 'active' class on the clicked card to show or hide the buttons
+            card.classList.toggle('active');
+        }
+
+
+        // Open Modal and Play Video
+        function openModal(videoSrc) {
+            const modal = document.getElementById("videoModal");
+            const video = document.getElementById("gameVideo");
+            modal.style.display = "flex";
+            video.src = videoSrc;
+            video.play();
+        }
+
+        // Close Modal and Stop Video
+        function closeModal() {
+            const modal = document.getElementById("videoModal");
+            const video = document.getElementById("gameVideo");
+            modal.style.display = "none";
+            video.pause();
+            video.src = "";
+        }
+
+        // Purchase Game - Redirect to Steam
+        function purchaseGame(url) {
+            window.open(url, "_blank");
+        }
+
+        // Close modal if user clicks outside of the modal content
+        window.onclick = function (event) {
+            const modal = document.getElementById("videoModal");
+            if (event.target == modal) {
+                closeModal();
+            }
+        };
+    </script>
 
 </body>
+
 </html>

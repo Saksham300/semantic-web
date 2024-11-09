@@ -40,6 +40,7 @@ function fetchGames(type) {
 }
 
 // Function to display games in the container
+// Function to display games in the container
 function displayGames(data) {
     const gamesContainer = document.getElementById('games-container');
     
@@ -58,6 +59,12 @@ function displayGames(data) {
             // Create a game card element
             const gameCard = document.createElement('div');
             gameCard.classList.add('game-card');
+            
+            // Add an onclick event to navigate to store.html
+            gameCard.onclick = () => {
+                window.location.href = 'store.html';
+            };
+            
             gameCard.innerHTML = `
                 <img src="${imageSrc}" alt="${gameName} Image" class="game-image">
                 <h3>${gameName}</h3>
@@ -73,10 +80,4 @@ function displayGames(data) {
         // If no games are found, display a message
         gamesContainer.innerHTML = '<p>No games found for this type.</p>';
     }
-}
-
-// Function to load games when a user selects a type from the dropdown
-function loadGames() {
-    const gameType = document.getElementById('game-type').value;
-    fetchGames(gameType); // Fetch games based on the selected type
 }
