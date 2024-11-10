@@ -1,12 +1,16 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #1b2838 25%, #171a21 75%);
+    background: 
+        linear-gradient(135deg, rgba(27, 40, 56, 0.9) 25%, rgba(23, 26, 33, 0.9) 75%), 
+        url('images/page_bg_generated_v6b.jpg'); /* Gradient overlay with background image */
+    background-size: cover; /* Ensures image covers entire background */
+    background-attachment: fixed; /* Keeps image fixed on scroll */
+    background-position: center; /* Centers the background image */
     color: #D1D1D1; /* Lighter text for better contrast */
     margin: 0;
     padding: 0;
 }
-
 /* Header Styles */
 header {
     background-color: #171a21; /* Dark background for header */
